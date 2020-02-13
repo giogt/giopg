@@ -1,0 +1,16 @@
+# TODO: make the app read this file
+
+refresh_rate: 30 seconds
+
+appenders:
+  stdout:
+    kind: console
+
+root:
+  level: info
+  appenders:
+    - stdout
+
+loggers:
+  secretbox:
+    level: debug
