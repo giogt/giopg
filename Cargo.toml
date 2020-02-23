@@ -9,6 +9,7 @@ edition = "2018"
 [dependencies]
 log = "0.4.8"
 log4rs = "0.10.0"
+human-panic = "1.0.1"
 structopt = "0.3.9"
 rpassword = "4.0.5"
 sodiumoxide = "0.2.5"

@@ -1,6 +1,7 @@
 #[macro_use]
 extern crate log;
 
+use human_panic::setup_panic;
 use log::LevelFilter;
 use log4rs;
 use log4rs::append::console::ConsoleAppender;
@@ -16,6 +17,7 @@ mod args;
 mod secretbox;
 
 fn main() -> Result<(), Box<dyn Error>> {
+    setup_panic!();
     init_log();
     sodiumoxide::init().expect("sodiumoxide initialization failed");
 
